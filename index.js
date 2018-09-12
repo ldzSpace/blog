@@ -12,6 +12,7 @@ const app = express()
 
 // 设置模板目录
 app.set('views',path.join(__dirname, 'views'))
+
 // 设置模板引擎
 app.set('view engine','ejs')
 
@@ -28,7 +29,7 @@ app.use(session({
     },
 
     store: new MongoStore({
-        url: config.mongodb // mongodb 地址
+        url: config.mongodb// mongodb 地址
     })
 }))
 
