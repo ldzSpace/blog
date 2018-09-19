@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="ace ace-card-on ace-tab-nav-on ace-main-nav-on ace-sidebar-on" data-theme-color="#c0e3e7">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ldzSpace</title>
+  <meta name="description" content="路漫漫其修远兮,吾将上下而求索">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="shortchut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+  <!-- 加载图片字体样式 Icon Fonts -->
+  <link href="/fonts/icomoon/style.css" rel="stylesheet">
+
+  <!-- Style 加载style-->
+  <link href="highlight/solarized-light.css" rel="stylesheet">
+  <link href="css/mainstyle.css" rel="stylesheet">
+
+  <!-- Modernizer -->
+  <!--
+    当你在网页中嵌入Modernizr的脚本时，它会检测当前浏览器是否支持CSS3的特性，
+    比如 @font-face、border-radius、 border-image、box-shadow、rgba() 等，
+    同时也会检测是否支持HTML5的 特性——比如audio、video、本地储存、和新的 <input>标签的类型和属性等。
+    在获取到这些信息的基础上，你可以在那些支持这些功能的浏览器上使用它们，
+    来决定是否创建一个基于JS的 fallback，或者对那些不支持的浏览器进行简单的优雅降级。
+  -->
+  <script  type="text/javascript" src="/js/vendor/modernizr-3.3.1.min.js"></script>
+  <script  type="text/javascript" src="/js/vendor/jquery-1.12.4.min.js"></script>
+  <script  type="text/javascript" src="/highlight/highlight.pack.js"></script>
+  <script  type="text/javascript" src="/js/plugins/jquery.mCustomScrollbar.min.js"></script>
+  <script  type="text/javascript" src="/js/plugins/isotope.pkgd.min.js"></script>  
+  <script  type="text/javascript" src="/js/plugins/progressbar.min.js"></script>
+  <script  type="text/javascript" src="/js/plugins/slick.min.js"></script>
+  <script  type="text/javascript" src="/js/mainset.js"></script>
+  <script  type="text/javascript" src="/js/options.js"></script>
+</head>
+<body>
+  <div class="ace-wrapper">
+    <!-- 导航标签 -->
+    <header id="ace-header" class="ace-container-shift ace-logo-in ace-head-boxed ace-nav-right">
+      <div class="ace-head-inner">
+        <div class="ace-head-container ace-container">
+          <div class="ace-head-row">
+              <!-- 指纹图标 -->
+              <div id="ace-head-col1" class="ace-head-col text-left">
+                  <a id="ace-logo" class="ace-logo" href="index.html">
+                     <img src="/img/uploads/brand/logo.svg" alt="ace resume"><span>.ldzSpace</span>
+                  </a>
+              </div>
+              <!-- 导航按钮 -->
+              <div id="ace-head-col2" class="ace-head-col text-right">
+                <div class="ace-nav-container ace-container hidden-sm hidden-xs">
+                  <nav id="ace-main-nav">
+                    <ul class="clear-list">
+                      <li><a href="home">首页</a></li>
+                      <li><a href="posts">分类</a></li>
+                      
+                      <li><a href="signup">标签</a></li>
+                      <li><a href="about">我</a></li>
+                      <li>
+                          <form role="search" method="get" class="search-form" action="http://sc.chinaz.com/jiaoben/">
+                            <label>
+                              <span class="screen-reader-text">Search for:</span>
+                              <input type="search" class="search-field" placeholder="Search" value="" name="s">
+                            </label>
+                            <button type="submit" class="search-submit">
+                              <span class="screen-reader-text">Search</span>
+                              <span class="ace-icon ace-icon-search"></span>
+                            </button>
+                          </form>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- 侧边弹框按钮 -->
+              <div id="ace-head-col3" class="ace-head-col text-right">
+                <button id="ace-sidebar-btn" class="btn btn-icon btn-light btn-shade">
+                  <span class="ace-icon ace-icon-side-bar-icon"></span>
+                </button>
+              </div>
+          </div>
+        </div> <!--ace-head-container-->
+      </div> <!-- .ace-head-inner-->
+    </header>
+
+    <!--  个人信息展示栏  -->
+    <article id="ace-card" class="ace-card bg-primary">
+        <div class="ace-card-inner text-center">
+          <img class="avatar avatar-195" src="img/xxx.jpeg" width="195" height="195" alt="">
+          <h1> ldzSpace </h1>
+          <p class="text-muted">关注 | 文章</p>
+          <ul class="ace-social clear-list">
+            <li><a><span class="ace-icon ace-icon-facebook"></span></a></li>
+            <li><a><span class="ace-icon ace-icon-twitter"></span></a></li>
+            <li><a href="https://github.com/ldzSpace"><span class="ace-icon ace-icon-github"></span></a></li>
+            <li><a><span class="ace-icon ace-icon-google-plus"></span></a></li>
+            <li><a><span class="ace-icon ace-icon-weibo"></span></a></li>
+
+          </ul>
+        </div>
+  
+        <footer class="ace-card-footer">
+          <a class="btn btn-lg btn-block btn-thin" href="#">下载简历</a>
+        </footer>
+    </article><!-- #ace-card -->
+   
+    <!-- 内容-->
+    <div id="ae-content" class="ace-container-shift">
+      <div class="ace-container">
+          <div id="ace-nav-wrap" class="hidden-sm hidden-xs">
+            <div id="ace-nav-cont">
+              <div id="ace-nav-scroll">
+                <nav id="ace-nav" class="ace-nav">
+                  <ul class="clear-list">
+                      <li class="ace-info">
+                        <a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="img/xxx.jpeg" alt=""></a>
+                      </li>									
+                      <li class="ace-info">
+                        <a href="experience.html" data-tooltip="Experience"><span class="ace-icon ace-icon-experience"></span></a>
+                      </li>
+                      <li class="ace-info">
+                        <a href="portfolio.html" data-tooltip="Portfolio"><span class="ace-icon ace-icon-portfolio"></span></a>
+                      </li>
+                      <li class="ace-info">
+                        <a href="testimonials.html" data-tooltip="References"><span class="ace-icon ace-icon-references"></span></a>
+                       </li>
+                      <li class="ace-info">
+                        <a href="contact.html" data-tooltip="Contact"><span class="ace-icon ace-icon-contact"></span></a>
+                      </li>
+                      <li class="ace-info">
+                        <a href="category.html" data-tooltip="Blog"><span class="ace-icon ace-icon-blog"></span></a>
+                      </li>
+                  </ul>
+                </nav>
+              </div>
+              <div id="ace-nav-tools" class="hidden">
+                  <span class="ace-icon ace-icon-dots-three-horizontal"></span>
+
+                  <button id="ace-nav-arrow" class="clear-btn">
+                      <span class="ace-icon ace-icon-chevron-thin-down"></span>
+                  </button>
+              </div>
+            </div>
+            <div class="ace-nav-btm"></div>
+          </div>

@@ -63,7 +63,7 @@ router.post('/create', checkLogin, function (req, res, next) {
 
 // GET /posts/:postId 单独一篇的文章页
 router.get('/:postId', function (req, res, next) {
-  const postId = req.params.postId
+  const postId = req.params.postId;
 
   Promise.all([
     PostModel.getPostById(postId), // 获取文章信息
@@ -82,7 +82,7 @@ router.get('/:postId', function (req, res, next) {
         comments: comments
       })
     })
-    .catch(next)
+    .catch(next);
 })
 
 // GET /posts/:postId/edit 更新文章页
@@ -93,7 +93,7 @@ router.get('/:postId/edit', checkLogin, function (req, res, next) {
   PostModel.getRawPostById(postId)
     .then(function (post) {
       if (!post) {
-        throw new Error('该文章不存在')
+        throw new Error('该文章不存在');
       }
       if (author.toString() !== post.author._id.toString()) {
         throw new Error('权限不足')
@@ -102,15 +102,17 @@ router.get('/:postId/edit', checkLogin, function (req, res, next) {
         post: post
       })
     })
-    .catch(next)
+    .catch(next);
 })
 
 // POST /posts/:postId/edit 更新一篇文章
 router.post('/:postId/edit', checkLogin, function (req, res, next) {
-  const postId = req.params.postId
-  const author = req.session.user._id
-  const title = req.fields.title
-  const content = req.fields.content
+  const postId = req.params.postId;
+  const author = req.session.user._id;
+  const authorName = req.session.user.name;
+  const title = req.fields.title;
+  const description = req.fields.description;
+  const content = req.fields.content;
 
   // 校验参数
   try {
